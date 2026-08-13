@@ -1,0 +1,16 @@
+//clase larpera para un nodo
+class Node<T>{
+    public T data; //dato del nodo
+    public Node<T> next; 
+    public Node<T> prev;
+
+    public Node(T data){
+        this.data = data;
+        this.next = null;
+        this.prev = null;
+    }    
+    public String toString(){
+        return data != null ? data.toString() : "null";
+    }
+}
+
