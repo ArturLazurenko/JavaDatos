@@ -1,10 +1,11 @@
-public class enlase<T> {
+
+public class LinkedList<T> {
     public Node<T> head;
     public Node<T> tail;
     public int tipoLista;
     public int size;
 
-    public enlase(int tipoLista) {
+    public LinkedList(int tipoLista) {
         this.tipoLista = tipoLista;
         this.head = null;
         this.tail = null;
@@ -50,7 +51,7 @@ public class enlase<T> {
 
     public void showList(){
         if (isEmpty()) {
-            System.out.println("when wen no hay nada xdxdxdxdxd");
+            System.out.println("La lista está vacía.");
             return;
         }
         System.out.println("La lista: ");
@@ -64,7 +65,7 @@ public class enlase<T> {
             }
         } while (actual != null);
         if (tipoLista == 3) {
-            System.out.println("lo acabo por que si no es un bucle esta wea xddd");
+            System.out.println("Fin del bucle");
         } else {
             System.out.println("null");
         }
@@ -86,7 +87,7 @@ public class enlase<T> {
     }
     public void delete(T data){
         if (isEmpty()) {
-            System.out.println("no hay nada que elimar mononeuronal xd");
+            System.out.println("La lista está vacía.");
             return;
         }
         Node<T> actual = head;
@@ -102,7 +103,7 @@ public class enlase<T> {
             if (tipoLista == 3 && actual == head) break;
         } while (actual != null);
         if (!encontrado) {
-            System.out.println("no se encontro bro xd");
+            System.out.println("No se encontró el elemento.");
             return;
         }
         if (size == 1) {
@@ -123,10 +124,9 @@ public class enlase<T> {
             }
         }
         size--;
-        System.out.println("mamo xddd");
+        System.out.println("Elemento eliminado.");
     }
 
 
 }
-
 
