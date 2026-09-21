@@ -1,9 +1,9 @@
-public class Queue {
+public class Cola<T> {
     public Node<String> front;
     public Node<String> back;
     public int size;
 
-    public Queue(){
+    public Cola(){
         this.front = null;
         this.back = null;
         this.size = 0;
@@ -12,7 +12,7 @@ public class Queue {
         return front == null;
     }
 
-    public void inQueue(String nombre){
+    public void enQueue(String nombre){
         Node<String> nuevoNodo = new Node<String>(nombre);
         if (isEmpty()){
             front = nuevoNodo;
@@ -25,7 +25,7 @@ public class Queue {
     }
     public String deQueue(){
         if (isEmpty()){
-            System.out.println("esta vacio");
+            System.out.println("La fila esta vacia");
             return null;
         }
         String data = front.data;
@@ -49,12 +49,12 @@ public class Queue {
             return;
         }
         Node<String> actual = front;
-        System.out.println("inicio ===");
+        System.out.println("===Inicio de la fila===");
         while (actual != null) {
             System.out.print(actual.data + " -> ");
             actual = actual.next;
         }
-        System.out.println("se acavoid");
+        System.out.println("Fin de la fila");
 
 
     }

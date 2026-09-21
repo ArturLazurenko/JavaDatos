@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "Sem5/arboles/src",
+        "Sem5/arbol_kirk/src",
+        "Sem5/SQL/src",
+        "Sem5/GUI_Algo_ritmos_recursividad/src",
+        "Sem6/metodosDeOrdenamiento/src"
+    ],
+    "java.project.referencedLibraries": [
+        "/home/a/Downloads/mysql-connector-j-26.7.0/mysql-connector-j-26.7.0.jar"
+    ]
+}
